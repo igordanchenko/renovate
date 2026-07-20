@@ -3,6 +3,7 @@
   "description": "Shared Renovate defaults",
   "extends": ["config:best-practices"],
   "timezone": "America/Los_Angeles",
+  "labels": ["dependencies"],
   "lockFileMaintenance": {
     "automerge": true
   },
