@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate preset for JS libraries: devDependencies pinned, dependencies keep semver ranges, peerDependencies widened",
+  "extends": ["github>igordanchenko/renovate"]
+}

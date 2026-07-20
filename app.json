@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate preset for apps: all dependencies pinned to exact versions",
+  "extends": ["github>igordanchenko/renovate", ":pinAllExceptPeerDependencies"]
+}

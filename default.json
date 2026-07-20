@@ -1,0 +1,35 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate defaults",
+  "extends": ["config:best-practices"],
+  "timezone": "America/Los_Angeles",
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "description": "Enforce minimum release age for GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Group and automerge all non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
+      "groupName": "non-major dependencies",
+      "automerge": true
+    },
+    {
+      "description": "Group GitHub Actions updates separately",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
+      "groupName": "github actions"
+    },
+    {
+      "description": "0.x minors are breaking by convention - treat them like majors: individual PRs, manual review",
+      "matchCurrentVersion": "/^0/",
+      "matchUpdateTypes": ["minor"],
+      "groupName": null,
+      "automerge": false
+    }
+  ]
+}
