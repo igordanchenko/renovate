@@ -3,7 +3,8 @@
   "description": "Shared Renovate defaults",
   "extends": [
     "config:best-practices",
-    "helpers:pinGitHubActionDigestsToSemver"
+    "helpers:pinGitHubActionDigestsToSemver",
+    "schedule:weekly"
   ],
   "timezone": "America/Los_Angeles",
   "labels": ["dependencies"],
