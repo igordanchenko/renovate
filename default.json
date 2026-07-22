@@ -24,6 +24,12 @@
       "automerge": true
     },
     {
+      "description": "Group non-major devDependencies into their own group",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
+      "groupName": "non-major dev dependencies"
+    },
+    {
       "description": "Group GitHub Actions updates separately",
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
