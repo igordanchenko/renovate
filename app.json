@@ -1,12 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Renovate preset for apps: all dependencies pinned to exact versions",
-  "extends": ["github>igordanchenko/renovate", ":pinAllExceptPeerDependencies"],
+  "extends": ["github>igordanchenko/renovate"],
   "packageRules": [
     {
-      "description": "Keep GitHub Actions tool version inputs (e.g. node-version) unpinned",
-      "matchManagers": ["github-actions"],
-      "matchDepTypes": ["uses-with"],
+      "description": "Pin npm dependencies to exact versions",
+      "matchManagers": ["npm"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "Keep engines and peerDependencies as ranges",
+      "matchDepTypes": ["engines", "peerDependencies"],
       "rangeStrategy": "auto"
     }
   ]
