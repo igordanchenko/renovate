@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: release
+  group: ${{ github.workflow }}
 
 jobs:
   release:
