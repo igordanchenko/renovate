@@ -18,15 +18,13 @@ Shareable [Renovate](https://docs.renovatebot.com/) config presets.
 
 Add one of the presets to `renovate.json` in the consuming repo:
 
-**Libraries** — `dependencies` keep semver ranges, `devDependencies` are
-pinned, `peerDependencies` are widened:
+**Libraries** — `dependencies` keep semver ranges, `devDependencies` are pinned,
+`peerDependencies` are widened:
 
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>igordanchenko/renovate:lib"
-  ]
+  "extends": ["github>igordanchenko/renovate:lib"]
 }
 ```
 
@@ -35,9 +33,7 @@ pinned, `peerDependencies` are widened:
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>igordanchenko/renovate:app"
-  ]
+  "extends": ["github>igordanchenko/renovate:app"]
 }
 ```
 
@@ -49,5 +45,5 @@ consuming repo runs meaningful CI on pull requests. Recommended GitHub setup:
 
 - branch protection (or a ruleset) on the default branch with required status
   checks
-- "Allow auto-merge" enabled in the repo settings (Renovate uses GitHub's
-  native auto-merge by default)
+- "Allow auto-merge" enabled in the repo settings (Renovate uses GitHub's native
+  auto-merge by default)

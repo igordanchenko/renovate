@@ -22,7 +22,7 @@ the two consumer-facing entry points.
   belong.
 - **`app.json`** — the "pin everything to exact versions" variant, adding npm
   range rules on top of the defaults.
-- **`lib.json`** — the "keep semver ranges" variant. It intentionally adds *no*
+- **`lib.json`** — the "keep semver ranges" variant. It intentionally adds _no_
   packageRules of its own — its range behavior comes from Renovate's own
   defaults, so tune library behavior in the defaults, not here.
 
@@ -41,7 +41,7 @@ npx --yes --package renovate -- renovate-config-validator --strict default.json 
 Validation only checks syntax/schema. To prove a `packageRule` actually matches
 what you intend, build a control/treatment harness with `platform: local` — the
 `renovate-preset-testing` skill documents this, including the pitfall that
-global-config `force` *replaces* preset arrays instead of appending.
+global-config `force` _replaces_ preset arrays instead of appending.
 
 ## Release flow
 
