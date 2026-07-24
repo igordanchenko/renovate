@@ -12,8 +12,6 @@
 
 </div>
 
----
-
 Shareable [Renovate](https://docs.renovatebot.com/) config presets.
 
 ## Usage
