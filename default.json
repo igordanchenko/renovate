@@ -5,6 +5,7 @@
   "timezone": "America/Los_Angeles",
   "labels": ["dependencies"],
   "schedule": ["* * * * 1"],
+  "prHourlyLimit": 0,
   "lockFileMaintenance": {
     "schedule": ["* * * * 1"],
     "automerge": true
