@@ -20,19 +20,22 @@
       "description": "Group and automerge all non-major updates",
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
       "groupName": "non-major dependencies",
+      "group": { "commitMessageExtra": "" },
       "automerge": true
     },
     {
       "description": "Group non-major devDependencies into their own group",
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
-      "groupName": "non-major dev dependencies"
+      "groupName": "non-major dev dependencies",
+      "group": { "commitMessageExtra": "" }
     },
     {
       "description": "Group GitHub Actions updates separately",
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
-      "groupName": "github actions"
+      "groupName": "github actions",
+      "group": { "commitMessageExtra": "" }
     },
     {
       "description": "0.x minors are breaking by convention - treat them like majors: individual PRs, manual review",
