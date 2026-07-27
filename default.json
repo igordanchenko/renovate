@@ -43,6 +43,13 @@
       "matchUpdateTypes": ["minor"],
       "groupName": null,
       "automerge": false
+    },
+    {
+      "description": "0.0.x patches are breaking by convention too - a caret range on 0.0.x pins it exactly",
+      "matchCurrentVersion": "/^0\\.0\\./",
+      "matchUpdateTypes": ["patch"],
+      "groupName": null,
+      "automerge": false
     }
   ]
 }
