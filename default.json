@@ -19,16 +19,9 @@
     {
       "description": "Group and automerge all non-major updates",
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
-      "groupName": "non-major dependencies",
+      "groupName": "dependencies",
       "group": { "commitMessageExtra": "" },
       "automerge": true
-    },
-    {
-      "description": "Group non-major devDependencies into their own group",
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
-      "groupName": "non-major dev dependencies",
-      "group": { "commitMessageExtra": "" }
     },
     {
       "description": "Group GitHub Actions updates separately",
