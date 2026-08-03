@@ -1,11 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Shared Renovate defaults",
-  "extends": ["config:best-practices", "schedule:weekly", "helpers:pinGitHubActionDigestsToSemver"],
+  "extends": ["config:best-practices", "helpers:pinGitHubActionDigestsToSemver"],
   "timezone": "America/Los_Angeles",
   "labels": ["dependencies"],
+  "schedule": ["* 0-8 * * 1"],
   "prHourlyLimit": 0,
   "lockFileMaintenance": {
+    "schedule": ["* 0-8 * * 1"],
     "automerge": true
   },
   "packageRules": [
