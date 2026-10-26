@@ -41,6 +41,13 @@
       "matchUpdateTypes": ["patch"],
       "groupName": null,
       "automerge": false
+    },
+    {
+      "description": "oxfmt ships every release as a 0.x minor - a dev-only formatter, so group and automerge it like any other non-major",
+      "matchPackageNames": ["oxfmt"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": "dependencies",
+      "automerge": true
     }
   ]
 }
